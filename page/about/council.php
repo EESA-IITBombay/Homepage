@@ -154,7 +154,7 @@
 	<h5 class='font_7'><?php echo $member['mobile'];?></h5>
       </div>
       <div style="position:absolute;left:0px;top:780px">
-	<a class='font_7' style="color:rgb(39,131,137)!important;" href="<?php echo $_SITE['uri']; ?>/index.php/about/council-old">Previous Councils</a>
+	<a class='font_7' style="color:rgb(39,131,137)!important;" href="<?php echo $_SITE['uri']; ?>/index.php/about/council/prev-council">Previous Councils</a>
       </div>
     </div>
   </div>
