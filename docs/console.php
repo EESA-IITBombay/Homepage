@@ -1,5 +1,5 @@
 <?php
-  die('DISABLED!!!');
+//  die('DISABLED!!!');
 ?>
 <!DOCTYPE html>
 <html>

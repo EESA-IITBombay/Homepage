@@ -1,63 +1,87 @@
+<!----PAGE-SPECIFIC-CSS-STARTS---->
 <style>
-.carousel-control.left,.carousel-control.right{background-image:none!important;}
-.carousel-inner .item img{width:100%;height:100%;}
-.carousel-indicators{bottom:12px;left:0;width:auto;height:20px;padding:5px 25px 5px 25px;margin-left:0;}
-.carousel-indicators li{width:8px;height:8px;background:#fff;}
-.carousel-indicators .active{width:10px;height:10px;background:rgb(39,131,137);border-color:rgb(39,131,137);}
-.carousel-control{color:rgb(39,131,137);padding: 4px 0;width:26px;top:auto;left:auto;bottom:12px;opacity:0.80;}
-.carousel-control.right{right:10px;}
-.carousel-control.left{right:46px;}
-.carousel-caption{top:auto;width:auto;right:auto;bottom:60px;left:0;padding:20px;background:rgba(0,0,0,0.7);text-align:left;height:auto;max-width:50%;}
+  .carousel-control.left,.carousel-control.right{background-image:none!important;}
+  .carousel-inner .item img{width:100%;height:100%;}
+  .carousel-indicators{bottom:12px;left:0;width:auto;height:20px;padding:5px 25px 5px 25px;margin-left:0;}
+  .carousel-indicators li{width:8px;height:8px;background:#fff;}
+  .carousel-indicators .active{width:10px;height:10px;background:rgb(39,131,137);border-color:rgb(39,131,137);}
+  .carousel-control{color:rgb(39,131,137);padding: 4px 0;width:26px;top:auto;left:auto;bottom:12px;opacity:0.80;}
+  .carousel-control.right{right:10px;}
+  .carousel-control.left{right:46px;}
+  .carousel-caption{top:auto;width:auto;right:auto;bottom:60px;left:0;padding:20px;background:rgba(0,0,0,0.7);text-align:left;height:auto;max-width:50%;}
 </style>
-<div class="white-transclusent-bg" style="height:22px;position: absolute;top:15px;">
+<!-----PAGE-SPECIFIC-CSS-ENDS----->
+
+<!-----ADDRESS-BAR-STARTS-HERE---->
+<div class="white-transclusent-bg" style="height:22px;position:absolute;top:15px;z-index:999">
   <p class="font_8" style="padding-left: 20px;">You are here:&nbsp;&nbsp;
-    <a href="">Home</a>
+    <a href="#">Home</a>
   </p>
 </div>
-<div id='page-home' class='site-page' style='height:490px;'>
+<!------ADDRESS-BAR-ENDS-HERE----->
+
+<!----PAGE-CONTENT-STARTS-HERE---->
+<div id='page-home' class='site-page' style='height:500px;'>
+<?php $PAGE_HEIGHT = 500; ?>
   <div class='site-page-padded-content'>
-    <div style='visibility:visible;position:absolute;left:0px;top:0px;width:510px;height:420px;'>
+    <!------NEWS-CAROUSEL-STARTS------>
+    <div style='position:absolute;left:0px;top:5px;width:510px;height:420px;'>
       <div class="white-transclusent-bg"></div>
-<!--News Carousel-->
-      <div id='news-carousel' class="carousel slide" style='visibility:visible;overflow:hidden;left:15px;top:15px;width:480px;height:360px;position:absolute;'>
+      <div id='news-carousel' class="carousel slide" style='overflow:hidden;left:15px;top:15px;width:480px;height:360px;position:absolute;'>
         <div class="carousel-inner">
-<!--News Items-->
+        <!--------NEWS-ITEMS-START-------->
 <?php
-  require("php/MySQL.class.php");
-  require("config.php");
+  require_once("php/MySQL.class.php");
+  require_once("privconfig.php");
   isset($dbLink)?:$dbLink = new MySQL($_SITE['dbHost'], $_SITE['dbUser'], $_SITE['dbPass'], $_SITE['dbName']);
-//  $dbLink = new MySQL($_SITE['dbHost'], $_SITE['dbUser'], $_SITE['dbPass'], $_SITE['dbName']);
-  $news   = $dbLink->fetch("SELECT * from if_news ORDER BY start_time LIMIT 5");
-  foreach($news as $obj) {
+  $news  = $dbLink->fetch("SELECT * from tbl_news WHERE banner=1 ORDER BY start_time DESC LIMIT 20");
+  $empty = false;
+FETCH_NEWS:
+  $count = 0;
+  $level = 1;
+  while ( $level < 3 && $count < 10) {
+    foreach ( $news as $obj ) {
+      if ( $obj['importance'] != $level ) continue;
+      if ( $obj['end_time'] < time() && !$empty ) continue;
+      if ( $count == 0 ):
+        echo "          <article class='item active'>";
+      else:
+        echo "          <article class='item'>";
+      endif;
 ?>
-          <article class="item">
             <img src="site-data/news/images/<?php echo $obj['ID'];?>">
             <div class="carousel-caption">
               <h3><?php echo $obj['headline'];?></h3>
               <p><?php echo $obj['synopsis'];?></p>
-              <p><a class="btn btn-info btn-sm">Read More</a></p>
+              <p><a class="btn btn-info btn-sm" href="<?php echo $_SITE['uri'].'/index.php/news?article='.$obj['ID'];?>">Read More</a></p>
             </div>
           </article>
 <?php
+      $count++;
+      if ($count == 10) break;
+    }
+    $level++;
   }
+  if ( $count == 0 ) { $empty = true; goto FETCH_NEWS;}
 ?>
-          <article class="item active">
-            <img src="http://placehold.it/640x480/999999/cccccc">
-            <div class="carousel-caption">
-              <h3>Headline</h3>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-              <p><a class="btn btn-info btn-sm">Read More</a></p>
-            </div>
-          </article>
-
-<!--News Items End-->
-<!--News Carousel Indicators And Control-->
         </div>
+        <!---------NEWS-ITEMS-END--------->
+
+        <!--NEWS-CAROUSEL-CONTROLS-START-->
         <ol class="carousel-indicators">
+<?php
+  if ( $count != 0 ):
+?>
           <li data-target='#news-carousel' data-slide-to='0' class="active"></li>
-          <li data-target='#news-carousel' data-slide-to='1' class=""></li>
-          <li data-target='#news-carousel' data-slide-to='2' class=""></li>
-        </ol>        
+<?php
+    for($i=1;$i<$count;$i++){
+?>
+          <li data-target='#news-carousel' data-slide-to='<?php echo $i; ?>' class=""></li>
+<?php
+    }
+  endif;
+?>
+        </ol>
         <div class="carousel-controls">
           <a class="carousel-control left" href='#news-carousel' data-slide='prev'>
             <span class="fa fa-chevron-circle-left"></span>
@@ -66,16 +90,19 @@
             <span class="fa fa-chevron-circle-right"></span>
           </a>
         </div>
+        <!---NEWS-CAROUSEL-CONTROLS-END--->
       </div>
-      <a style="position:absolute;bottom:10px;left:15px;" class="font_1 color_15">Click here for more news...</a>
+      <a style="position:absolute;bottom:10px;left:15px;" class="font_1 color_15" href="<?php echo $_SITE['uri'].'/index.php/news';?>">Click here for more news...</a>
     </div>
-<!--News Carousel Indicators And Control End-->
-<!--News Carousel End-->
-<!--Google Calendar-->
-    <div class="tpa_viewer_skins_TPAWidgetSkintpaw0" style='visibility:visible;left:530px;top:0;width:450px;height:420px;position:absolute;'>
-<!-- !!!!!---LOOKS NEED SOME ATTENTION---!!!!! -->
-      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=420&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=eesa.iitb%40gmail.com&amp;color=%232F6309&amp;ctz=Asia%2FCalcutta" style="border:solid 1px #777" width='450' height='420' frameborder='0' scrolling='no'></iframe>
+    <!-------NEWS-CAROUSEL-ENDS------->
+
+    <!-----GOOGLE-CALENDAR-STARTS----->
+    <div style='left:530px;top:5px;width:450px;height:420px;position:absolute;'>
+    <!--::::::::::::::::::::::::::::-->
+    <!--:::::::TODO::EDIT-CSS:::::::-->
+    <!--::::::::::::::::::::::::::::-->
+      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=420&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=eesa.iitb%40gmail.com&amp;color=%232F6309&amp;ctz=Asia%2FCalcutta" style="border:solid 1px #777" width='450' height='420' frameborder='0' scrolling='yes'></iframe>
     </div>
-<!--Google Calendar End-->
+    <!------GOOGLE-CALENDAR-ENDS------>
   </div>
 </div>

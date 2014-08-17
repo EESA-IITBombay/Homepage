@@ -41,7 +41,7 @@
   <link rel='stylesheet' type='text/css' href="css/bootstrap.min.css">
   <link rel='stylesheet' type='text/css' href="css/font-awesome.min.css">
   <link rel='stylesheet' type='text/css' href="css/viewer.min.css">
-  <link rel='shortcut icon' type='image/x-icon' href="images/favicon.ico">
+  <link rel='shortcut icon' type='image/x-icon' href="images/favicon.black.ico">
 </head>
 
 <body>
@@ -262,7 +262,7 @@
         <div class="wysiwyg_viewer_skins_photo_NoSkinPhotowp2" style="visibility: visible; left: 462px; top: 18px; min-width: 61px; min-height: 60px; position: absolute;">
           <a class="wysiwyg_viewer_skins_photo_NoSkinPhotowp2-link" style="cursor: default;">
             <div class="skins_core_ImageNewSkinZoomable" style="visibility: visible; width: 61px; height: 60px;">
-              <img class="skins_core_ImageNewSkinZoomable-image" alt="" src="images/favicon.png" style="margin-top: 0px; margin-left: 0px; width: 61px; height: 60px;">
+              <img class="skins_core_ImageNewSkinZoomable-image" alt="" src="images/favicon.white.png" style="margin-top: 0px; margin-left: 0px; width: 61px; height: 60px;">
             </div>
           </a>
         </div>
