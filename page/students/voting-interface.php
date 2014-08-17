@@ -56,7 +56,7 @@
       </div>
       <div>
         <h5 class='font_4 color_20' style="font-size:23px;"><?php echo $contestant['contestant_name']; ?></h5>
-        <span class="font_1"><?php echo $contestant['contestant_id']; ?> - <a href = 'site-data/elections/manifestos/<?php echo $contestant['contestant_id']."_".$contestant['contestant_election_id']; ?>.pdf' target='_blank'>Manifesto</a></span><br>
+        <span class="font_1"><?php echo $contestant['contestant_id']; ?> - <a href = 'site-data/elections/manifestos/<?php echo $contestant['contestant_id']."_".$contestant['election_id']; ?>.pdf' target='_blank'>Manifesto</a></span><br>
       </div>
       <div class="font_7" style="margin-top:10px">
         <input name="<?php echo $contestant['contestant_id'].'_'.$election['election_id']; ?>" value="Yes" type="radio" style="margin-right:10px">Yes

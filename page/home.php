@@ -62,7 +62,7 @@ FETCH_NEWS:
     }
     $level++;
   }
-  if ( $count == 0 ) { $empty = true; goto FETCH_NEWS;}
+  if ( $count == 0 && $empty == false ) { $empty = true; goto FETCH_NEWS;}
 ?>
         </div>
         <!---------NEWS-ITEMS-END--------->
