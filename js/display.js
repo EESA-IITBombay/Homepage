@@ -1,13 +1,13 @@
 function nav_btn_onMouseOver( btn, height ) {
- $('#'+btn+'-dropWrapper').show();
- $('#nav-btn-'+btn).css('height',24+height+'px')
+  $('#'+btn+'-dropWrapper').show();
+  $('#nav-btn-'+btn).css('height',24+height+'px')
 }
 function nav_btn_onMouseOut( btn ) {
- $('#nav-btn-'+btn).css('height','24px')
- $('#'+btn+'-dropWrapper').hide();
+  $('#nav-btn-'+btn).css('height','24px')
+  $('#'+btn+'-dropWrapper').hide();
 }
 function nav_btn_onClick( btn ) {
-window.location.href = "https://www.ee.iitb.ac.in/course/~eesa/devel/index.php/"+btn;
+  window.location.href = "https://www.ee.iitb.ac.in/course/~eesa/devel/index.php/"+btn;
 }
 function navigate_to( btn ) {
   $('[id^="page-"]').fadeOut('fast');

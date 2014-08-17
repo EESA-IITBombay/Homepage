@@ -551,7 +551,7 @@
 
 	//	By default, show the public username linked to the Q2A profile page for the user
 		$publicusername=$logged_in_user['publicusername'];
-		return '<a href="'.qa_path_html('user/'.$publicusername).'" class="qa-user-link">'.htmlspecialchars($publicusername).'</a>';
+		return '<a href="'.qa_path_html('user/'.$publicusername).'" class="qa-user-link" style="padding-right:5px">'.htmlspecialchars($publicusername).'</a>';
 	/*
 		Example 1 - suitable if:
 

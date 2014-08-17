@@ -48,6 +48,7 @@
 	
 	$loginuserid=qa_get_logged_in_userid();
 	$identifier=QA_FINAL_EXTERNAL_USERS ? $userid : $handle;
+        header('Location: ../../../index.php/user/'.urlencode(reset(qa_get_public_from_userids(array($identifier)))));
 
 	list($useraccount, $userprofile, $userfields, $usermessages, $userpoints, $userlevels, $navcategories, $userrank)=
 		qa_db_select_with_pending(

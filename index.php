@@ -9,7 +9,15 @@
   session_regenerate_id(true);
 
   $PAGE_PATH = ltrim($_SERVER['PATH_INFO'],"/");
+
   if ( empty($PAGE_PATH) ) $PAGE_PATH = "home";
+  if ( substr($PAGE_PATH,0,12) == "alumni-forum" ) header("Location: ".$_SITE['uri']."/".$PAGE_PATH);
+  if ( substr($PAGE_PATH,0,4) == "user" ) {
+    $PAGE_PARAMS = substr($PAGE_PATH,5);
+    if ( strrpos($PAGE_PARAMS,"/") !== false ) header("Location: ".$_SITE['uri']."/alumni-forum/index.php/".$PAGE_PATH);
+    $PAGE_PATH = "user";
+  }
+
   $PAGE_ID = str_replace("/","-",$PAGE_PATH);
   $PAGE_PATH = "page/".$PAGE_PATH;
 
@@ -112,7 +120,7 @@
                         </div>
                       </div>
                     </div>
-                    <div id="nav-btn-students-alumni-forum" class="site-header-nav-btn " state="" listposition="dropCenter" container="drop" style="visibility: inherit; position: relative;" onclick="nav_btn_onClick('students-alumni-forum')">
+                    <div id="nav-btn-students-alumni-forum" class="site-header-nav-btn " state="" listposition="dropCenter" container="drop" style="visibility: inherit; position: relative;" onclick="nav_btn_onClick('alumni-forum')">
                       <div class="site-header-nav-btn-inner">
                         <div style="padding: 0px;">
                           <p class="site-header-nav-btn-label" style="line-height: 29px;">Alumni&nbsp;Forum</p>
@@ -158,7 +166,7 @@
 <!--HEADER - NAVIGATION SUB MENU - alumni-->
                   <div id="alumni-dropWrapper" class="site-header-nav-dropWrapper" style="left:0px;width:185px;">
                   <div class="site-header-nav-moreContainer">
-                    <div id="nav-btn-alumni-alumni-forum" class="site-header-nav-btn " state="" listposition="top" container="drop" style="visibility: inherit; position: relative;" onclick="nav_btn_onClick('alumni-alumni-forum')">
+                    <div id="nav-btn-alumni-alumni-forum" class="site-header-nav-btn " state="" listposition="top" container="drop" style="visibility: inherit; position: relative;" onclick="nav_btn_onClick('alumni-forum')">
                       <div class="site-header-nav-btn-inner">
                         <div style="padding: 0px;">
                           <p class="site-header-nav-btn-label" style="line-height: 29px;">Alumni&nbsp;Forum</p>
