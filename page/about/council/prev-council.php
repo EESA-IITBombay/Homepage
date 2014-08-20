@@ -2,7 +2,7 @@
   <div class='white-transclusent-bg'></div>
   <div class='white-transclusent-bg' style="height:22px;position: absolute;top:15px;">
     <p class="font_8" style="padding-left: 20px;">You are here:&nbsp;&nbsp;
-    <a href="<?php echo $_SITE['uri']; ?>/index.php/about">About</a>
+    <a href="<?php echo $_SITE['uri']; ?>/site/about">About</a>
       &nbsp;>>&nbsp;
       <a href="#">Council</a>
       &nbsp;>>&nbsp;

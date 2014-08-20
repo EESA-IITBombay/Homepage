@@ -2,7 +2,7 @@
   <div class="white-transclusent-bg"></div>
   <div class="site-page-padded-content" align='center'>
 <?php
-  if ( substr($_GET['redirect'],0,12) != 'alumni-forum' ) $_GET['redirect'] = 'index.php/'.$_GET['redirect'];
+  if ( substr($_GET['redirect'],0,12) != 'alumni-forum' ) $_GET['redirect'] = 'site/'.$_GET['redirect'];
   if ( isset($_SESSION['AUTH_TOKEN']) ):
 ?>
     <script>window.location.href="<?php echo $_SITE['uri'].'/'.$_GET['redirect'];?>"</script>

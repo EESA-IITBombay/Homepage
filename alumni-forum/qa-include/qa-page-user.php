@@ -83,7 +83,7 @@
 			$qa_content=include QA_INCLUDE_DIR.'qa-page-not-found.php';
 			break;
 	}
-        $qa_content['navigation']['sub']['profile']['url']="../".$qa_content['navigation']['sub']['profile']['url'];
+        $qa_content['navigation']['sub']['profile']['url']="../../../../site".substr($qa_content['navigation']['sub']['profile']['url'],18);
         $qa_content['navigation']['sub']['profile']['label']=substr($qa_content['navigation']['sub']['profile']['label'],5);
 	return $qa_content;
 

@@ -25,9 +25,9 @@
 <?php $PAGE_HEIGHT = 500; ?>
   <div class='site-page-padded-content'>
     <!------NEWS-CAROUSEL-STARTS------>
-    <div style='position:absolute;left:0px;top:5px;width:510px;height:420px;'>
+    <div style='position:absolute;left:0px;top:5px;width:496px;height:420px;'>
       <div class="white-transclusent-bg"></div>
-      <div id='news-carousel' class="carousel slide" style='overflow:hidden;left:15px;top:15px;width:480px;height:360px;position:absolute;'>
+      <div id='news-carousel' class="carousel slide" style='overflow:hidden;left:8px;top:8px;width:480px;height:360px;position:absolute;'>
         <div class="carousel-inner">
         <!--------NEWS-ITEMS-START-------->
 <?php
@@ -53,7 +53,7 @@ FETCH_NEWS:
             <div class="carousel-caption">
               <h3><?php echo $obj['headline'];?></h3>
               <p><?php echo $obj['synopsis'];?></p>
-              <p><a class="btn btn-info btn-sm" href="<?php echo $_SITE['uri'].'/index.php/news?article='.$obj['ID'];?>">Read More</a></p>
+              <p><a class="btn btn-info btn-sm" href="<?php echo $_SITE['uri'].'/site/news?article='.$obj['ID'];?>">Read More</a></p>
             </div>
           </article>
 <?php
@@ -92,16 +92,17 @@ FETCH_NEWS:
         </div>
         <!---NEWS-CAROUSEL-CONTROLS-END--->
       </div>
-      <a style="position:absolute;bottom:10px;left:15px;" class="font_1 color_15" href="<?php echo $_SITE['uri'].'/index.php/news';?>">Click here for more news...</a>
+      <a style="position:absolute;bottom:10px;left:15px;" class="font_1 color_15" href="<?php echo $_SITE['uri'].'/site/news';?>">Click here for more news...</a>
     </div>
     <!-------NEWS-CAROUSEL-ENDS------->
 
     <!-----GOOGLE-CALENDAR-STARTS----->
-    <div style='left:530px;top:5px;width:450px;height:420px;position:absolute;'>
-    <!--::::::::::::::::::::::::::::-->
-    <!--:::::::TODO::EDIT-CSS:::::::-->
-    <!--::::::::::::::::::::::::::::-->
-      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=420&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=eesa.iitb%40gmail.com&amp;color=%232F6309&amp;ctz=Asia%2FCalcutta" style="border:solid 1px #777" width='450' height='420' frameborder='0' scrolling='yes'></iframe>
+    <div style='position:absolute;left:510px;top:5px;width:470px;height:420px;'>
+      <div class="white-transclusent-bg"></div>
+      <!--::::::::::::::::::::::::::::-->
+      <!--:::::::TODO::EDIT-CSS:::::::-->
+      <!--::::::::::::::::::::::::::::-->
+      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=404&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=eesa.iitb%40gmail.com&amp;color=%232F6309&amp;ctz=Asia%2FCalcutta" style='overflow:hidden;left:8px;top:8px;width:454px;height:404px;position:absolute;' frameborder='0' scrolling='yes'></iframe>
     </div>
     <!------GOOGLE-CALENDAR-ENDS------>
   </div>

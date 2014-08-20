@@ -24,7 +24,7 @@
 <?php
   if ( !isset($_SESSION['USER_ID']) || !isset($_SESSION['USER_NAME']) || !isset($_SESSION['AUTH_TOKEN']) ):
 ?>
-    <script>window.location.href="<?php echo $_SITE['uri'].'/index.php/login?page='.urlencode('Voting Interface').'&redirect='.urlencode('students/voting-interface'); ?>"</script>
+    <script>window.location.href="<?php echo $_SITE['uri'].'/site/login?page='.urlencode('Voting Interface').'&redirect='.urlencode('students/voting-interface'); ?>"</script>
 <?php
   else:
     require_once("php/MySQL.class.php");

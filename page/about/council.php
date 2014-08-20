@@ -2,7 +2,7 @@
   <div class='white-transclusent-bg'></div>
   <div class='white-transclusent-bg' style="height:22px;position: absolute;top:15px;">
     <p class="font_8" style="padding-left: 20px;">You are here:&nbsp;&nbsp;
-    <a href="<?php echo $_SITE['uri']; ?>/index.php/about">About</a>
+    <a href="<?php echo $_SITE['uri']; ?>/site/about">About</a>
       &nbsp;>>&nbsp;
       <a href="#">Council</a>
     </p>
@@ -154,7 +154,7 @@
 	<h5 class='font_7'><?php echo $member['mobile'];?></h5>
       </div>
       <div style="position:absolute;left:0px;top:780px">
-	<a class='font_7' style="color:rgb(39,131,137)!important;" href="<?php echo $_SITE['uri']; ?>/index.php/about/council/prev-council">Previous Councils</a>
+	<a class='font_7' style="color:rgb(39,131,137)!important;" href="<?php echo $_SITE['uri']; ?>/site/about/council/prev-council">Previous Councils</a>
       </div>
     </div>
   </div>

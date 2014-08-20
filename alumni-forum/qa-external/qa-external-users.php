@@ -108,11 +108,12 @@
 	{
 
 	//	Until you edit this function, don't show login, register or logout links
+                require('../config.php');
 
 		return array(
-			'login' => $relative_url_prefix.'../index.php/login?page=Alumni+Forum&redirect='.urlencode('alumni-forum/'.$redirect_back_to_url),
-			'register' =>  $relative_url_prefix.'../index.php/register?redirect='.urlencode('alumni-forum/'.$redirect_back_to_url),
-			'logout' => $relative_url_prefix.'../php/logout.php?redirect='.urlencode('alumni-forum/'.$redirect_back_to_url)
+			'login' =>     $_SITE['uri_display'].'/site/login?page=Alumni+Forum&redirect='.urlencode('alumni-forum/'.$redirect_back_to_url),
+			'register' =>  $_SITE['uri_display'].'/site/register?redirect='.urlencode('alumni-forum/'.$redirect_back_to_url),
+			'logout' =>    $_SITE['uri_display'].'/php/logout.php?redirect='.urlencode('alumni-forum/'.$redirect_back_to_url)
 		);
 
 	/*

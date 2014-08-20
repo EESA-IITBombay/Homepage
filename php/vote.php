@@ -52,5 +52,5 @@ You will be redirected to the voting interface in <span id='timer' style="color:
   setTimeout(function(){document.getElementById('timer').innerHTML="3"}, 2000);
   setTimeout(function(){document.getElementById('timer').innerHTML="2"}, 3000);
   setTimeout(function(){document.getElementById('timer').innerHTML="1"}, 4000);
-  setTimeout(function(){window.location.href="<?php echo $_SITE['uri']; ?>/index.php/students/voting-interface";},5000);
+  setTimeout(function(){window.location.href="<?php echo $_SITE['uri']; ?>/site/students/voting-interface";},5000);
 </script>

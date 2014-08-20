@@ -1,7 +1,7 @@
 <!-----ADDRESS-BAR-STARTS-HERE---->
 <div class="white-transclusent-bg" style="height:22px;position:absolute;top:15px;z-index:999">
   <p class="font_8" style="padding-left: 20px;">You are here:&nbsp;&nbsp;
-    <a href="<?php echo $_SITE['uri']; ?>/index.php/about">Home</a>
+    <a href="<?php echo $_SITE['uri']; ?>/site/about">Home</a>
       &nbsp;>>&nbsp;
       <a href="#">News</a>
   </p>
@@ -19,7 +19,7 @@
       <h4 class="font_4 color_15">Recent news</h4>
     </div>
     <div id='1' class="wysiwyg_viewer_skins_WRichTextNewSkintxtNew" style="left:292px;top:72px;right:50px;min-height:185px;position:absolute;">
-      <a href="<?php echo $_SITE['uri']; ?>/index.php/news#1"><h6 class="font_6">New ideas</h6></a>
+      <a href="<?php echo $_SITE['uri']; ?>/site/news#1"><h6 class="font_6">New ideas</h6></a>
       <p class="font_8"><em>Brian Ferry March 2012</em></p>
       <p class="font_7">&nbsp;</p>
       <p class="font_8">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
@@ -42,7 +42,7 @@
     </div>
 
     <div id='0' class="wysiwyg_viewer_skins_WRichTextNewSkintxtNew" style="left:50px;right:50px;top:400px;min-height:185px;position:absolute;">
-      <a href="<?php echo $_SITE['uri']; ?>/index.php/news#0"><h6 class="font_6">New ideas</h6></a>
+      <a href="<?php echo $_SITE['uri']; ?>/site/news#0"><h6 class="font_6">New ideas</h6></a>
       <p class="font_8"><em>Brian Ferry March 2012</em></p>
       <p class="font_7">&nbsp;</p>
       <p class="font_8">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>

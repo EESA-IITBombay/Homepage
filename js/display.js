@@ -7,7 +7,7 @@ function nav_btn_onMouseOut( btn ) {
   $('#'+btn+'-dropWrapper').hide();
 }
 function nav_btn_onClick( btn ) {
-  window.location.href = "https://www.ee.iitb.ac.in/course/~eesa/devel/index.php/"+btn;
+  window.location.href = "https://www.ee.iitb.ac.in/course/~eesa/preview/site/"+btn;
 }
 function navigate_to( btn ) {
   $('[id^="page-"]').fadeOut('fast');
