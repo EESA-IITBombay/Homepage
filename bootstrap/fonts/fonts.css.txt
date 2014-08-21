@@ -1,0 +1,9 @@
+http://themes.googleusercontent.com/static/fonts/basic/v3/Pqd6s-RedeRT8zQTRwM-ug.woff
+http://themes.googleusercontent.com/static/fonts/josefinslab/v4/46aYWdgz-1oFX11flmyEfXhCUOGz7vYGh680lGh-uXM.woff
+http://themes.googleusercontent.com/static/fonts/josefinslab/v4/NbE6ykYuM2IyEwxQxOIi2Hl4twXkwp3_u9ZoePkT564.woff
+http://themes.googleusercontent.com/static/fonts/josefinslab/v4/etsUjZYO8lTLU85lDhZwUnpumDtkw9GHrrDfd7ZnWpU.woff
+http://themes.googleusercontent.com/static/fonts/josefinslab/v4/af9sBoKGPbGO0r21xJuly70qgHI2SEqiJszC-CVc3gY.woff
+http://themes.googleusercontent.com/static/fonts/noticiatext/v4/wdyV6x3eKpdeUPQ7BJ5uUHhCUOGz7vYGh680lGh-uXM.woff
+http://themes.googleusercontent.com/static/fonts/noticiatext/v4/pEko-RqEtp45bE2P80AAKXl4twXkwp3_u9ZoePkT564.woff
+http://themes.googleusercontent.com/static/fonts/noticiatext/v4/dAuxVpkYE_Q_IwIm6elsKHpumDtkw9GHrrDfd7ZnWpU.woff
+http://themes.googleusercontent.com/static/fonts/noticiatext/v4/-rQ7V8ARjf28_b7kRa0Jur0qgHI2SEqiJszC-CVc3gY.woff
