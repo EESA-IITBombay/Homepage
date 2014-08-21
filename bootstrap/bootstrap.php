@@ -11,7 +11,7 @@
   <meta name="author" content="Kamal Galrani">
   <link rel="icon" type="image/x-icon" href="images/favicon.black.ico">
   <title>EESA Homepage</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.med.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -88,9 +88,9 @@
         </li>
       </ul>
     </div>
-    <div id="page-home" class="site-page" style="width:100%;height:0;padding-bottom:43%;/*<(img_height/img_width)*100>*/">
+    <div id="page-home" class="site-page">
       <!------NEWS-CAROUSEL-STARTS------>
-      <div style="float:left;width:48%;height:91.66666667%;margin:0% 1%;" class="white-transclusent-bg">
+      <div style="float:left;width:48%;height:91.66667%;margin:0% 1%;" class="white-transclusent-bg">
         <div id="news-carousel" class="carousel slide" style="padding:0.75em;">
           <div class="carousel-inner" style="width:100%;height:0;padding-bottom:75%;/*<(img_height/img_width)*100>*/">
             <!--------NEWS-ITEMS-START-------->
@@ -122,9 +122,10 @@
         <a style="padding-left:1em" class="font_1 color_15" href="https://www.ee.iitb.ac.in/course/~eesa/devel/site/news">Click here for more news...</a>
       </div>
       <!-------NEWS-CAROUSEL-ENDS------->
-      <div style="float:left;width:48%;height:91.66666667%;margin:0% 1%;overflow:hidden" class="white-transclusent-bg">
+      <div style="float:right;width:48%;height:91.66667%;margin:0% 1%;overflow:hidden" class="white-transclusent-bg">
         <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=eesa.iitb%40gmail.com&amp;color=%232F6309&amp;ctz=Asia%2FCalcutta" style="padding:0.75em;width:100%;height:100%" frameborder="0" scrolling="no"></iframe>
       </div>
+      <br style="clear:both;">
     </div>
     <div id="site-footer" style="width:100%;min-height:85px;margin-bottom:50px" class="white-transclusent-bg">
       <div style="padding-left:50px;padding-top:20px;float:left;width:70%">

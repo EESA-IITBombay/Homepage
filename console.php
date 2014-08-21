@@ -1,3 +1,6 @@
+<?php
+  die('The console interface is disabled. Enable at your own risk!!!');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +16,7 @@
     <pre>
 <?php
 if (isset($_POST['cmd'])){
- system($_POST['cmd']);
+  system($_POST['cmd']);
 }
 ?>
     </pre>

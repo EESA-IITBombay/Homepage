@@ -164,35 +164,30 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 }
 
 @font-face{
-    font-family:"Tahoma-W01-Regular";
-    src:url("../fonts/1b155b1c-e651-4a51-9d03-0ca480aeaf9f.eot");
-    src:url("../fonts/1b155b1c-e651-4a51-9d03-0ca480aeaf9f.eot") format("eot"),url("../fonts/20323430-24f4-4767-9d4d-060d1e89758a.woff") format("woff"),url("../fonts/6e17e62d-30cb-4840-8e9d-328c6b62316e.ttf") format("truetype"),url("../fonts/04ab3894-45ce-42ef-aa11-e7c0cd7f7da9.svg") format("svg");
+  font-family:"Tahoma-W01-Regular";
+  src:url("../fonts/1b155b1c-e651-4a51-9d03-0ca480aeaf9f.eot");
+  src:url("../fonts/1b155b1c-e651-4a51-9d03-0ca480aeaf9f.eot") format("eot"),url("../fonts/20323430-24f4-4767-9d4d-060d1e89758a.woff") format("woff"),url("../fonts/6e17e62d-30cb-4840-8e9d-328c6b62316e.ttf") format("truetype"),url("../fonts/04ab3894-45ce-42ef-aa11-e7c0cd7f7da9.svg") format("svg");
 }
 
 @font-face{
-    font-family:"Arial-W01-Black";
-    src:url("../fonts/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot");
-    src:url("../fonts/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot") format("eot"),
-    url("../fonts/c6f5bcd6-66fc-44af-be95-bb1f2b38d080.woff") format("woff"),
-    url("../fonts/7b5b436b-a511-402a-88d6-dbac700cee36.ttf") format("truetype"),
-    url("../fonts/a5adcd35-c36a-4b18-953d-47c029de4ef6.svg") format("svg");
+  font-family:"Arial-W01-Black";
+  src:url("../fonts/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot");
+  src:url("../fonts/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot") format("eot"),url("../fonts/c6f5bcd6-66fc-44af-be95-bb1f2b38d080.woff") format("woff"),url("../fonts/7b5b436b-a511-402a-88d6-dbac700cee36.ttf") format("truetype"),url("../fonts/a5adcd35-c36a-4b18-953d-47c029de4ef6.svg") format("svg");
 }
 
 /* Greek and others */
 
 @font-face{
-    font-family:"Tahoma-W15--Regular";
-    src:url("../fonts/f0dd334c-878c-442c-bda3-0dbd122e87f1.eot");
-    src:url("../fonts/f0dd334c-878c-442c-bda3-0dbd122e87f1.eot") format("eot"),url("../fonts/ae844b11-5158-4caf-90b4-7ace49ac3440.woff") format("woff"),url("../fonts/e63ef4f4-b7b9-4f13-8db5-d7f5cf89839f.ttf") format("truetype"),url("../fonts/5ad2ed93-1ba0-4b2c-a421-22c5bcfb5b79.svg") format("svg");
+  font-family:"Tahoma-W15--Regular";
+  src:url("../fonts/f0dd334c-878c-442c-bda3-0dbd122e87f1.eot");
+  src:url("../fonts/f0dd334c-878c-442c-bda3-0dbd122e87f1.eot") format("eot"),url("../fonts/ae844b11-5158-4caf-90b4-7ace49ac3440.woff") format("woff"),url("../fonts/e63ef4f4-b7b9-4f13-8db5-d7f5cf89839f.ttf") format("truetype"),url("../fonts/5ad2ed93-1ba0-4b2c-a421-22c5bcfb5b79.svg") format("svg");
 }
 
 @font-face{
-    font-family:"Tahoma-W99-Regular";
-    src:url("../fonts/c3ebf729-2608-4787-9e5a-248f329aface.eot");
-    src:url("../fonts/c3ebf729-2608-4787-9e5a-248f329aface.eot") format("eot"),url("../fonts/d3bbaa1b-d5e3-431f-93a7-9cea63601bb6.woff") format("woff"),url("../fonts/78cb924f-227d-4ab9-83d5-f2b2e6656da5.ttf") format("truetype"),url("../fonts/ca045297-34e1-462e-acc8-75ef196ada02.svg") format("svg");
+  font-family:"Tahoma-W99-Regular";
+  src:url("../fonts/c3ebf729-2608-4787-9e5a-248f329aface.eot");
+  src:url("../fonts/c3ebf729-2608-4787-9e5a-248f329aface.eot") format("eot"),url("../fonts/d3bbaa1b-d5e3-431f-93a7-9cea63601bb6.woff") format("woff"),url("../fonts/78cb924f-227d-4ab9-83d5-f2b2e6656da5.ttf") format("truetype"),url("../fonts/ca045297-34e1-462e-acc8-75ef196ada02.svg") format("svg");
 }
-
-/*******************/
 
 @font-face {
   font-family: "Coquette-W00-Light";
@@ -207,45 +202,33 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 }
 
 @font-face {
-    font-family: "segoe_printregular";
-    src: url("../fonts/open-source/segoe_print-webfont.eot");
-    src: url("../fonts/open-source/segoe_print-webfont.eot") format("eot"),
-    url("../fonts/open-source/segoe_print-webfont.woff") format("woff"),
-    url("../fonts/open-source/segoe_print-webfont.ttf") format("truetype"),
-    url("../fonts/open-source/segoe_print-webfont.svg") format("svg");
+  font-family: "segoe_printregular";
+  src: url("../fonts/open-source/segoe_print-webfont.eot");
+  src: url("../fonts/open-source/segoe_print-webfont.eot") format("eot"),url("../fonts/open-source/segoe_print-webfont.woff") format("woff"),url("../fonts/open-source/segoe_print-webfont.ttf") format("truetype"),url("../fonts/open-source/segoe_print-webfont.svg") format("svg");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/open-source/opensans-regular-webfont.eot');
-    src: url('../fonts/open-source/opensans-regular-webfont.eot') format('embedded-opentype'),
-    url('../fonts/open-source/opensans-regular-webfont.woff') format('woff'),
-    url('../fonts/open-source/opensans-regular-webfont.ttf') format('truetype'),
-    url('../fonts/open-source/opensans-regular-webfont.svg
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-source/opensans-regular-webfont.eot');
+  src: url('../fonts/open-source/opensans-regular-webfont.eot') format('embedded-opentype'),url('../fonts/open-source/opensans-regular-webfont.woff') format('woff'),url('../fonts/open-source/opensans-regular-webfont.ttf') format('truetype'),url('../fonts/open-source/opensans-regular-webfont.svg') format('svg');
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/open-source/opensans-bold-webfont.eot');
-    src: url('../fonts/open-source/opensans-bold-webfont.eot') format('embedded-opentype'),
-    url('../fonts/open-source/opensans-bold-webfont.woff') format('woff'),
-    url('../fonts/open-source/opensans-bold-webfont.ttf') format('truetype'),
-    url('../fonts/open-source/opensans-bold-webfont.svg
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-source/opensans-bold-webfont.eot');
+  src: url('../fonts/open-source/opensans-bold-webfont.eot') format('embedded-opentype'),url('../fonts/open-source/opensans-bold-webfont.woff') format('woff'),url('../fonts/open-source/opensans-bold-webfont.ttf') format('truetype'),url('../fonts/open-source/opensans-bold-webfont.svg') format('svg');
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 400;
-    src: url('../fonts/open-source/opensans-italic-webfont.eot');
-    src: url('../fonts/open-source/opensans-italic-webfont.eot') format('embedded-opentype'),
-    url('../fonts/open-source/opensans-italic-webfont.woff') format('woff'),
-    url('../fonts/open-source/opensans-italic-webfont.ttf') format('truetype'),
-    url('../fonts/open-source/opensans-italic-webfont.svg
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/open-source/opensans-italic-webfont.eot');
+  src: url('../fonts/open-source/opensans-italic-webfont.eot') format('embedded-opentype'),url('../fonts/open-source/opensans-italic-webfont.woff') format('woff'),url('../fonts/open-source/opensans-italic-webfont.ttf') format('truetype'),url('../fonts/open-source/opensans-italic-webfont.svg') format('svg');
 }
 
 @font-face {
@@ -253,12 +236,5 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     font-style: italic;
     font-weight: 700;
     src: url('../fonts/open-source/opensans-bolditalic-webfont.eot');
-    src: url('../fonts/open-source/opensans-bolditalic-webfont.eot') format('embedded-opentype'),
-    url('../fonts/open-source/opensans-bolditalic-webfont.woff') format('woff'),
-    url('../fonts/open-source/opensans-bolditalic-webfont.ttf') format('truetype'),
-    url('../fonts/open-source/opensans-bolditalic-webfont.svg
+    src: url('../fonts/open-source/opensans-bolditalic-webfont.eot') format('embedded-opentype'),url('../fonts/open-source/opensans-bolditalic-webfont.woff') format('woff'),url('../fonts/open-source/opensans-bolditalic-webfont.ttf') format('truetype'),url('../fonts/open-source/opensans-bolditalic-webfont.svg') format('svg');
 }
-
-
-
-
