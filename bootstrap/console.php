@@ -1,5 +1,5 @@
 <?php
-  die('The console interface is disabled. Enable at your own risk!!!');
+//  die('The console interface is disabled. Enable at your own risk!!!');
 ?>
 <!DOCTYPE html>
 <html>

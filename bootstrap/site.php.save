@@ -42,7 +42,7 @@
     <div class="site-header jumbotron" style="border-radius:0px;" align="center">
       <img class="img-responsive" alt="" src="images/favicon.white.png" style="width:6em;padding-bottom:0.5em;">
       <img class="img-responsive" alt="" src="images/head_left.png" style="width:12em;display:inline-block;padding-bottom:1em">
-      <h4  class="font_4 color_1" style="padding:0 10%;display:inline-block;">&nbsp;EESA</h4>
+      <h4  class="font_4 color_1" style="padding:0em 3em;display:inline-block;">&nbsp;EESA</h4>
       <img class="img-responsive" alt="" src="images/head_right.png" style="width:12em;display:inline-block;padding-bottom:1em">
       <h6  class="font_6 color_8" style="margin-top:-0.5em;"><span class="color_15">//</span>&nbsp;IIT Bombay</h6>
 
@@ -51,7 +51,7 @@
   echo "    </div>";
   require("page/body/".$_PAGE['path']);					//Get page body
 ?>
-    <div id="site-footer" class="white-transclusent-bg site-footer">
+    <div id="site-footer" style="width:100%;min-height:85px;margin-bottom:50px" class="white-transclusent-bg">
       <div style="padding-left:50px;padding-top:20px;float:left;width:70%">
         <p class="font_9"><span class="glyphicon glyphicon-copyright-mark"></span> 2014 EESA, IIT Bombay.<br> Designed and maintained by Kamal Galrani</p>
       </div>
@@ -67,6 +67,14 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+//    var w = $("[class='img-responsive']","[class='carousel-inner']").css('width');
+//    w = w.substr(0, w.length - 2);
+//    $("[class='img-responsive']","[class='carousel-inner']").css('height',0.75*w+"px")
+    $("[class='carousel-inner']").css('height',"auto");
+    $("[class='carousel-inner']").css('padding-bottom',"0px");
+    $("[class='img-responsive']","[class='carousel-inner']").css('height',"100%")
+  </script>
   <?php @include("page/js/".$_PAGE['path']);?>
 </body>
 </html>
